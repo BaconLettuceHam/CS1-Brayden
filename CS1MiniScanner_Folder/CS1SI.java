@@ -17,5 +17,6 @@ class CS1SI
         int time = mony.nextInt();
         double IR1 = pr*rat2*time;
         System.out.println("The interest rate is "+IR1+".");
+        mony.close();
     }
 }

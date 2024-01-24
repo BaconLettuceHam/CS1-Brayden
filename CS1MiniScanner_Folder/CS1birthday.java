@@ -12,5 +12,6 @@ class CS1birthday
         int num1 = age.nextInt();
         int num2 = 2024-num1;
         System.out.println("You are around "+num2+" years old.");
+        age.close();
     }
 }

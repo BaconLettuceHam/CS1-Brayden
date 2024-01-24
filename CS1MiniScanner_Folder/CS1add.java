@@ -14,5 +14,6 @@ class CS1add
         float num2 = add.nextFloat();
         float num3 = num1+num2;
         System.out.println("The result is: "+num3+".");
+        add.close();
     }
 }

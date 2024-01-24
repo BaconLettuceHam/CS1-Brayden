@@ -12,5 +12,6 @@ class CS1twice
         float num1 = twice.nextFloat();
         float num2 = num1*2;
         System.out.println("The result is: "+num2+".");
+        twice.close();
     }
 }

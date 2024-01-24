@@ -14,5 +14,6 @@ class CS1F
         int numM= temp-32;
         double numC= numM*5/9;
         System.out.println("The celcius is: "+numC+".");
+        fahr.close();
     }
 }
