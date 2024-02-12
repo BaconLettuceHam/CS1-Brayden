@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class CS1choice3
+class CS1choice5
 {
     public static void main (String args[])
     {
