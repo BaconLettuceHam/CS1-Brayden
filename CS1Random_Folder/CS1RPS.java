@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-class CS1choice5
+class CS1RPS
 {
     public static void main (String args[])
     {
