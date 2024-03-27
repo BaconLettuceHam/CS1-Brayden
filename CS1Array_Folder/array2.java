@@ -1,38 +1,79 @@
+//Source for reference: https://www.geeksforgeeks.org/check-if-a-value-is-present-in-an-array-in-java/
 import java.util.Scanner;
-
+import java.util.Arrays;
+import java.util.stream.IntStream;
 class array1
 {
-    private static void check(int[] numX, int numN)
+    private static boolean check(int[] numX, int num0)
     {
+        // check if the specified element
+        // is present in the array or not
+        // using Linear Search method
         boolean test = false;
-        for (int element : numX) 
-        {
-            if (element==numN)
-            {
-                test=true;
+        for (int element : numX) {
+            if (element == num0) {
+                test = true;
                 break;
             }
         }
+        return test;
     }
     public static void main (String args[])
     {
         Scanner finput = new Scanner(System.in);
-        int[] numX={}
-        int[] numY={}
-        for(i=1;i<=25;i++)
+        int[] numX=new int [25];
+        int[] numY=new int [25];
+        int num1=26;
+        for(int i=0;i<=24;i++)
         {
-            System.out.print("Enter a number ("+i+" times remaining): ")
-            int num0 = finput.nextInt()
-            if (numX,numN)
+            num1=num1-1;
+            System.out.print("Enter a number ("+num1+" times remaining): ");
+            int num0 = finput.nextInt();
+            if (check(numX, num0)==true)
             {
-                numY = Arrays.copyOf(numY, numY.length+1);
-                numY[numY.length] = num0; 
+                numY[i]=num0;
             }
             else
             {
-                numX = Arrays.copyOf(numX, numX.length+1);
-                numX[numX.length] = num0;
+                numX[i]=num0;
             }
         }
+        for (int e=0;e<=numX.length-1;e++)
+        {
+            if (numX[e]==0)
+            {
+
+            }
+            else
+            {
+                if (e == numX.length-1)
+                {
+                    System.out.println(numX[e]);
+                } 
+                else 
+                {
+                    System.out.print(numX[e]+", ");
+                }
+            }
+        }
+        for (int a=0;a<=numY.length-1;a++)
+        {
+            if (numY[a]==0)
+            {
+
+            }
+            else
+            {
+                if (a == numY.length-1)
+                {
+                    System.out.println(numY[a]);
+                }
+                else 
+                {
+                    System.out.print(numY[a]+", ");
+                }
+            }
+        }
+        finput.close();
     }
 }
